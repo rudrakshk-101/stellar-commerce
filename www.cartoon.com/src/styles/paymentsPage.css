@@ -1,0 +1,40 @@
+.paymentOuter{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* left: 50%;
+    right: 50%; */
+    /* transform: translateX(-100%); */
+    /* transform: translate(0,-50%); */
+    width: fit-content;
+    height: 48vh;
+    padding: 0 5vh;
+    border-radius: 12px;
+    border: 1px solid green;
+    align-items: center;
+}
+
+/* .paymentOuter input{
+    position: absolute;
+    top: -3vh;
+    right: -9vw;    
+} */
+
+.toRazorPay{
+    height: 3vh;
+    width: 10vw;
+    border: 2px solid ;
+    background-color: rgb(75, 250, 75);
+    border-radius: 12px;
+}
+
+.paymentOuterOuter{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

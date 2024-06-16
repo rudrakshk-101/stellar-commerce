@@ -1,0 +1,49 @@
+.slide-container {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  background: linear-gradient(to bottom, #555 0%, #333 100%);
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 0 auto; 
+  display: flex;
+  align-items: center; 
+}
+.truck-icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: #fff;
+  transition: left 0.3s ease;
+}
+
+.slide-container.swiped {
+  background: linear-gradient(to bottom, #5cb85c 0%, #4CAF50 100%);
+}
+
+.slide-container.swiped .truck-icon {
+  left: calc(100% - 100px);
+}
+
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: #fbc02d;
+  opacity: 0;
+  animation: confettiFall 1s ease-out forwards;
+  border-radius: 50%;
+}
+
+@keyframes confettiFall {
+  0% {
+      opacity: 1;
+      transform: translateY(0) rotateZ(0);
+  }
+  100% {
+      opacity: 0;
+      transform: translateY(100vh) rotateZ(360deg);
+  }
+}

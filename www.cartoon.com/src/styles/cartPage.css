@@ -1,0 +1,237 @@
+Global settings
+.shopping-cart, .column-labels, .product, .totals-item, .group:before, .group:after {
+    content: "";
+    display: table;
+    background-color: white;
+  }
+  .group:after {
+    clear: both;
+  }
+  .group {
+    zoom: 1;
+  }
+  
+  /* Apply dollar signs */
+  .product .product-price:before, .product .product-line-price:before, .totals-value:before {
+    content: '$';
+  }
+  
+  /* Body/Header stuff */
+  /* body {
+    padding: 0px 30px 30px 20px;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+  } */
+  h1 {
+    font-weight: 100;
+  }
+  label {
+    color: #aaa;
+  }
+  .shopping-cart {
+    /* margin-top: -45px; */
+    margin-top: 15vh;
+  }
+  
+  /* Column headers */
+  .column-labels label {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  .column-labels .product-image, .column-labels .product-details, .column-labels .product-removal {
+    text-indent: -9999px;
+  }
+  
+  /* Product entries */
+  .product {
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    height: 10vh;
+    width: 83vw;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    padding-left:6vh;
+    margin-right: 500px;
+  }
+  .product .product-image {
+    text-align: left;
+    float: right;
+  }
+  .product .product-image img {
+    width: 118px;
+    margin-top: 3vh;
+  }
+  .product .product-details .product-title {
+    margin-right: 20px;
+    text-align: right;
+    font-size: 28px;
+    color: #494;
+    font-weight: 700;
+    /* float: right; */
+    font-family: 'HelveticaNeue-Medium', 'Helvetica Neue Medium';
+  }
+  .product .product-details .product-description {
+    margin: 5px 20px 5px 5px;
+    text-align: right;
+    float: right;
+    width: 40vw;
+    line-height: 1.4em;
+
+  }
+  .product .product-quantity input {
+    width: 55px;
+  }
+  .product .remove-product {
+    border: 0;
+    padding: 4px 8px;
+    background-color: #c66;
+    color: #fff;
+    font-family: 'HelveticaNeue-Medium', 'Helvetica Neue Medium';
+    font-size: 12px;
+    border-radius: 3px;
+  }
+  .product .remove-product:hover {
+    background-color: #a44;
+  }
+  
+  /* Totals section */
+  .totals .totals-item {
+    float: left;
+    clear: both;
+    width: 85vw;
+    margin-bottom: 0px;
+    margin-right: 0;
+    display:inline;
+    padding-top: 6px;
+  }
+  .totals .totals-item label {
+    float: left;
+    clear: both;
+    width: 79%;
+    text-align: left;
+    margin-left: 23vw;
+
+  }
+  .totals .totals-item .totals-value {
+    float: right;
+    width: 26%;
+    text-align: center;
+    position: relative;
+    top: -19px;
+    margin-right: 23vh;
+  }
+  .totals .totals-item-total {
+    font-family: 'HelveticaNeue-Medium', 'Helvetica Neue Medium';
+  }
+  
+  /* Checkout button */
+  .checkout {
+    float: left;
+    border: 0;
+    margin-top: 57px;
+    padding: 6px 25px;
+    background-color: #6b6;
+    color: #fff;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-left: -98vh;
+    
+    
+  }
+  .checkout:hover {
+    background-color: #494;
+  }
+  
+  /* Make adjustments for tablet */
+  @media screen and (max-width: 650px) {
+    .shopping-cart {
+      margin: 0;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+    }
+    .column-labels {
+      display: none;
+    }
+    .product .product-image {
+      float: right;
+      width: auto;
+    }
+    .product .product-image img {
+      margin: 0 0 10px 10px;
+    }
+    .product .product-details {
+      float: none;
+      margin-bottom: 10px;
+      width: auto;
+    }
+    .product .product-price {
+      clear: both;
+      width: 70px;
+    }
+    .product .product-quantity {
+      width: 100px;
+    }
+    .product .product-quantity input {
+      margin-left: 20px;
+    }
+    .product .product-quantity:before {
+      content: 'x';
+    }
+    .product .product-removal {
+      width: auto;
+    }
+    .product .product-line-price {
+      float: right;
+      width: 70px;
+    }
+  }
+  
+  /* Make more adjustments for phone */
+  @media screen and (max-width: 350px) {
+    .product .product-removal {
+      float: left;
+    }
+    .product .product-line-price {
+      float: left;
+      clear: left;
+      width: auto;
+      margin-top: 10px;
+    }
+    .product .product-line-price:before {
+      content: 'Item Total: $';
+    }
+    .totals .totals-item label {
+      width: 60%;
+    }
+    .totals .totals-item .totals-value {
+      width: 40%;
+    }
+  }
+  .backgroundUlta{
+    background-color: #1f2041;
+    position: fixed;
+  }
+  .circle1{
+    position:absolute;
+    width:700px;
+    height: 700px;
+    border-radius: 50%;
+    filter: blur(300px);
+    top:-300px;
+    left: -200px;
+    background-color: #ff0015;
+  }
+  .circle2{
+    position:absolute;
+    width:700px;
+    height: 700px;
+    border-radius: 50%;
+    filter: blur(300px);
+    top:300px;
+    right: -300px;
+    background-color: #00d9ff;
+  }
+  /*  */
